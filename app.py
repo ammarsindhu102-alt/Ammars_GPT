@@ -55,7 +55,7 @@ if user_input := st.chat_input("Ask Ammars_GPT anything..."):
         
         # Pull response using Llama-3.3-70b (Fastest open-source model available)
         completion = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="openai/gpt-oss-120b",
             messages=api_messages,
             stream=True
         )
