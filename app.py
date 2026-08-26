@@ -11,7 +11,7 @@ st.markdown("""
     footer {visibility: hidden;}
     #MainMenu {visibility: hidden;}
     </style>
-""", unsafe_allowed_html=True)
+""", unsafe_allow_html=True)
 
 st.title("🤖 Ammars_GPT")
 st.caption("Welcome! I am Ammars_GPT, a custom AI assistant built by Ammar.")
