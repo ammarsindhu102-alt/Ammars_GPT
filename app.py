@@ -60,13 +60,14 @@ if user_input := st.chat_input("Ask Ammars_GPT anything..."):
             stream=True
         )
         
-        # Generator function for a dynamic visual typing effect
+                # Updated stream parser compatible with the latest Groq library
         def parse_stream():
             for chunk in completion:
-                if chunk.choices.delta.content:
-                    yield chunk.choices.delta.content
+                if chunk.choices and chunk.choices[0].delta.content is not None:
+                    yield chunk.choices[0].delta.content
                     
         response = st.write_stream(parse_stream())
+        
         
     # Commit the AI's final answer to memory session
     st.session_state.messages.append({"role": "assistant", "content": response})
