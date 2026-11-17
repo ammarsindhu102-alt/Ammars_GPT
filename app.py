@@ -20,7 +20,7 @@ hide_streamlit_style = """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 # App Header
 st.title("⚡ Ultra-Fast AI Assistant")
-
+st.markdown("created by Ammar")
 
 # Sidebar for API Key & Settings
 with st.sidebar:
