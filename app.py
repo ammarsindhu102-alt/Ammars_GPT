@@ -3,7 +3,7 @@ from groq import Groq
 
 # Page Configuration
 st.set_page_config(
-    page_title="⚡ Groq AI Assistant",
+    page_title="⚡ Ammar's AI Assistant",
     page_icon="🤖",
     layout="centered",
     initial_sidebar_state="expanded"
@@ -19,7 +19,7 @@ hide_streamlit_style = """
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 # App Header
-st.title("⚡ Ultra-Fast AI Assistant")
+st.title("⚡ Ammar's AI Assistant")
 st.markdown("created by Ammar")
 
 # Sidebar for API Key & Settings
