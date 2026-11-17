@@ -27,9 +27,9 @@ with st.sidebar:
     model_choice = st.selectbox(
         "Select Model",
         [
-            "llama-3.3-70b-versatile",
-            "llama-3.1-8b-instant",
-            "mixtral-8x7b-32768"
+            "openai/gpt-oss-120b",
+            "openai/gpt-oss-20b",
+            "qwen/qwen3.8-27b"
         ],
         index=0
     )
@@ -38,7 +38,7 @@ with st.sidebar:
         st.session_state.messages = []
         st.rerun()
 
-# Validate API Key
+# Validat
 if not api_key:
     st.warning("⚠️ Please provide your Groq API Key in the sidebar or via Streamlit secrets to start chatting.")
     st.stop()
