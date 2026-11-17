@@ -1,0 +1,4 @@
+my-ai-app/
+├── app.py
+├── requirements.txt
+└── .gitignore
