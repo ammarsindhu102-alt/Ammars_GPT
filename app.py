@@ -9,9 +9,18 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Hide Streamlit Footer, Header, and Menu
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 # App Header
 st.title("⚡ Ultra-Fast AI Assistant")
-st.markdown("Powered by **Groq** and **Streamlit** 🚀")
+
 
 # Sidebar for API Key & Settings
 with st.sidebar:
